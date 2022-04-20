@@ -1,9 +1,13 @@
 import React from "react";
 
-const Articolo = () => {
+const Articolo = ({ title, body }) => {
   return (
     <article>
-      <h6>Articolo</h6>
+      <div style={{ position: 'relative', height: 'fit-content' }}>
+        <h4>{title}</h4>
+        <div className="underline"></div>
+      </div>
+      <p>{body}</p>
     </article>
   );
 };
